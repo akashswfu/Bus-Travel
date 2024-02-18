@@ -17,7 +17,7 @@
 <body >
 
     <header class="max-w-screen-xl mx-auto">        
-        <!-- <nav class="my-5">
+         <nav class="my-5">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -45,20 +45,22 @@
                   <button id="" class="text-[#1DD100] border px-8 py-3 rounded-md bg-[#1DD1001A] text-xl border-[#1DD100]"><span class="font-bold">Bus</span> <i class="fa-solid fa-van-shuttle"></i></button>
                 </div>
               </div>
-        </nav> -->
+        </nav> 
+        
+        
         <!-- Banner section  -->
         
-        <!-- <div class="relative">
+         <div class="relative">
             <div class="bg-[url('./images/banner.png')] h-[550px] bg-no-repeat bg-cover rounded-b-[30px]">
                 <div class="flex h-full  flex-col justify-center items-center gap-6">
                     <h1 class="text-white text-6xl font-bold text-center">End-to-End Travel With <br> </h1>
                     <h1><span class="text-[#1DD100] text-6xl font-bold text-center">Sakura Paribahan</span></h1>
                     <p class="text-white text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates nostrum quae tempora animi <br>cupiditate voluptatem numquam ipsam assumenda ipsum iure?</span></p>
-                    <button id="buy-tickets" class=" text-md font-bold bg-[#1DD100] px-5 py-3 rounded-md">Buy Tickets</button>
+                    <button id="buy-tickets" class=" text-md font-bold bg-[#1DD100] px-5 py-3 rounded-md"> <a href="#paribahan-section">Buy Tickets</a> </button>
                 </div>
 
             </div>
-            <div class="flex justify-around items-center absolute -bottom-14 left-[23%] gap-10">
+            <div class="flex justify-between items-center absolute -bottom-14 left-[23%] gap-24 bg-red-300">
                 <div class="flex justify-center gap-4 items-center border-0  rounded-xl p-4 bg-white border-b-4 border-green-500">
                     <img src="./images/people.png" alt="">
                     <div class="space-y-2">
@@ -82,14 +84,14 @@
                 </div>
                 
             </div>
-        </div> -->
+        </div> 
     
     </header>
 
     <main>
 
         <!-- Best offers for you -->
-        <!-- <div  class="max-w-screen-xl mx-auto mt-24">
+        <div  class="max-w-screen-xl mx-auto mt-24">
             
             <h1 class="text-center text-3xl font-bold">Best offers for you</h1>
             <div class="flex justify-between gap-8 mt-12 ">
@@ -138,19 +140,19 @@
             <div class="flex justify-center my-12 mb-20">
                 <button class="border-2 text-xl text-[#1DD100] font-extrabold border-[#1DD100] rounded-xl flex justify-center items-center px-6 py-4">Seel All Offers</button>
             </div>
-        </div> -->
+        </div> 
 
 
         <!-- PH Paribahan  -->
         
 
-    <div class="bg-[#F7F8F8]  rounded-tr-3xl py-8 rounded-tl-3xl mt-20">
+    <div id="paribahan-section" class="bg-[#F7F8F8]  rounded-tr-3xl py-8 rounded-tl-3xl mt-20">
         <div class="">
             <div class="max-w-screen-xl mx-auto  ">
-                <!-- <div class="text-center space-y-5 pt-20 ">
-                    <h1 class="text-4xl font-bold">P.H Paribahan</h1>
+                 <div class="text-center space-y-5 pt-20 ">
+                    <h1 class="text-4xl font-bold">Sakura Paribahan</h1>
                     <p class="text-[#03071299]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt perferendis <br> alias sit obcaecati dolore laudantium, ad natus</p>
-                </div> -->
+                </div> 
                 <div class="flex  w-full h-full mt-16 bg-white  rounded-3xl p-8 gap-10">
                     <div class="w-9/12 ">
                         <div class="flex items-center justify-between mb-6">
@@ -230,83 +232,83 @@
                                 <p class="bg-[#0307121A] text-[#03071280] px-10 py-3 rounded-md text-xl"><i class="fa-regular fa-circle-user"></i></p>
                               </div>
                             <div class="flex justify-between gap-1 my-1 w-full">
-                                <kbd class=" ">A</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">A1</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">A2</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">A3</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">A4</kbd>
+                                <button class=" ">A</button>
+                                <button onclick="this.disabled = true;" class="seat-btn hover:bg-[#ece8e8] bg-[#F8F8F8] px-10 py-3 rounded-md">A1</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">A2</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">A3</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">A4</button>
                                 
                             </div>
                             <div class="flex justify-between gap-1 my-1 w-full">
-                                <kbd >B</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">B1</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">B2</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">B3</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">B4</kbd>
+                                <button >B</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">B1</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">B2</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">B3</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">B4</button>
                                 
                             </div> 
                             <div class="flex justify-between gap-1 my-1 w-full">
-                                <kbd >C</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">C1</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">C2</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">C3</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">C4</kbd>
+                                <button >C</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">C1</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">C2</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">C3</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">C4</button>
                                 
                             </div> 
                             <div class="flex justify-between gap-1 my-1 w-full">
-                                <kbd >D</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">D1</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">D2</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">D3</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">D4</kbd>
+                                <button >D</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">D1</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">D2</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">D3</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">D4</button>
                                 
                             </div> 
                             <div class="flex justify-between gap-1 my-1 w-full">
-                                <kbd >E</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">E1</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">E2</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">E3</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">E4</kbd>
+                                <button >E</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">E1</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">E2</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">E3</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">E4</button>
                                 
                             </div> 
                             <div class="flex justify-between gap-1 my-1 w-full">
-                                <kbd >F</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">F1</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">F2</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">F3</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">F4</kbd>
+                                <button >F</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">F1</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">F2</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">F3</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">F4</button>
                                 
                             </div> 
                             <div class="flex justify-between gap-1 my-1 w-full">
-                                <kbd >G</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">G1</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">G2</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">G3</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">G4</kbd>
+                                <button >G</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">G1</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">G2</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">G3</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">G4</button>
                                 
                             </div> 
                             <div class="flex justify-between gap-1 my-1 w-full">
-                                <kbd >H</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">H1</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">H2</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">H3</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">H4</kbd>
+                                <button >H</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">H1</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">H2</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">H3</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">H4</button>
                                 
                             </div> 
                             <div class="flex justify-between gap-1 my-1 w-full">
-                                <kbd >I</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">I1</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">I2</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">I3</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">I4</kbd>
+                                <button >I</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">I1</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">I2</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">I3</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">I4</button>
                                 
                             </div> 
                             <div class="flex justify-between gap-1 my-1 w-full">
-                                <kbd >J</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">J1</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">J2</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">J3</kbd>
-                                <kbd class="seat-btn bg-[#F8F8F8] px-10 py-3 rounded-md">J4</kbd>
+                                <button >J</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">J1</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">J2</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">J3</button>
+                                <button class="seat-btn bg-[#F8F8F8] hover:bg-[#ece8e8] px-10 py-3 rounded-md">J4</button>
                                 
                             </div> 
                         </div>
@@ -314,23 +316,6 @@
                     </div>
                     <div class="border-dashed py-4 border-2 border-[#0307121A] "></div>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        
-        
         
                     <!-- Seat Details SEction  -->
         
@@ -361,7 +346,7 @@
                                 <p class=" font-semibold">Discount</p>
                                 <p class=" font-semibold">BDT <span id="total-discount">0</span></p>
                             </div>
-                            <div class ="flex items-center justify-between bg-white  p-3 rounded-md w-full">
+                            <div id="apply-coupon-section" class ="flex items-center justify-between bg-white  p-3 rounded-md w-full">
                                 <input id="coupon-field" class=" rounded outline-none" type="text" placeholder="Have any coupon?">
                                 <button id="apply-btn" class="px-3 py-2 rounded-md bg-[#1DD100] text-white font-bold">Apply</button>
                             </div>
@@ -373,19 +358,42 @@
         
                         <div class="space-y-5 mt-4">
                             <div class="space-y-3 rounded-2xl ">
-                                <h3 class="text-xl  font-semibold">Passenger Name*</h3>
+                                <h3 class="text-xl  font-semibold">Passenger Name</h3>
                                 <input class="border w-full outline-none rounded-xl px-4 py-5"  type="text" placeholder="Enter Your Name">
                             </div>
+
+                            <!-- validation number  -->
                             <div class="space-y-3">
                                 <h3 class="text-xl font-semibold">Phone Number*</h3>
-                                <input class="border w-full outline-none rounded-xl px-4 py-5" type="text" required placeholder="Enter Your Phone Number">
+                                <input type="number" id="phone-field" class="border w-full outline-none rounded-xl px-4 py-5" placeholder="Enter Your Phone Number">
+                                
+
                             </div>
                             <div class="space-y-3">
                                 <h3 class="text-xl font-semibold">Email ID</h3>
                                 <input class="border w-full outline-none rounded-xl px-4 py-5" type="email" placeholder="Enter your email Id">
                             </div>
-                            <div>
-                                <button id="next-btn" class="px-3 py-4 w-full rounded-xl bg-[#1DD100] text-white text-xl font-bold">Next</button>
+                            <div class="">
+                                <button onclick="showModal()" id="next-btn" class="px-3 py-4 w-full rounded-xl bg-[#1DD100] text-white text-xl font-bold">Next</button>
+                                
+                                <dialog id="my_modal_1" class="modal">
+                                <div class="modal-box flex bg-white flex-col  justify-center items-center rounded-2xl p-16 space-y-4">
+                                    <div>
+                                        <img src="./images/success.png" alt="">
+                                    </div>
+                                    <h1 class="text-xl font-bold text-[#1DD100]">SUCCESS</h1>
+                                    <p class="font-semibold text-center">Continue
+                                        Thank you for Booking Our Bus Seats. <br>
+                                        We are working hard to find the best service and deals for you.</p>
+                                        <p class="text-[#03071280]">Shortly you will find a confirmation in your email.</p>
+                                    <div class="modal-action">
+                                    <form method="dialog text-center">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="text-white px-20 rounded-3xl py-4 font-semibold text-xl bg-[#1DD100]">Continue</button>
+                                    </form>
+                                    </div>
+                                </div>
+                                </dialog>
                             </div>
                             <div class="flex justify-around items-center ">
                                 <p class="text-[#03071280] underline">Terms and Condition</p>
@@ -400,33 +408,12 @@
 
     </div>
 
-    <div>
-
-    </div>
-        
 
 
     </main>
+    
 
-    <section class=" flex justify-center items-center mx-auto bg-[#F7F8F8] h-screen hidden">
-
-        <div class="flex bg-white flex-col w-1/2 justify-center items-center rounded-2xl p-16 space-y-8">
-            <div>
-                <img src="./images/success.png" alt="">
-            </div>
-            <h1 class="text-xl font-bold text-[#1DD100]">SUCCESS</h1>
-            <p class="font-semibold text-center">Continue
-                Thank you for Booking Our Bus Seats. <br>
-                We are working hard to find the best service and deals for you.</p>
-                <p class="text-[#03071280]">Shortly you will find a confirmation in your email.</p>
-                <div>
-                    <button class="text-white px-20 rounded-3xl py-4 font-semibold text-xl bg-[#1DD100]">Continue</button>
-                </div>
-        </div>
-        
-    </section>
-
-    <!-- <footer class="bg-black text-white">
+    <footer class="bg-black text-white">
 
         <div class="py-24 space-y-8 max-w-screen-xl mx-auto">
 
@@ -462,7 +449,7 @@
 
         </div>
 
-    </footer> -->
+    </footer>
 
 
 

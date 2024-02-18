@@ -5,13 +5,28 @@ let sum = 0;
 
 
 for(const seat of seatButton){
-    seat.addEventListener('click',function(e){
+    seat.addEventListener('click',function(){
+        
+        if(seatCount>3){
+            alert('One person only can buy 4 seats');
+            return;
+        }
+        
         seatCount++;
+
+        seat.disabled = true;
+        
+        
         
         seat.style.backgroundColor = '#1DD100';
         seat.style.color = 'white';
 
         const seatNumber = seat.innerText;
+
+        seat.setAttribute('disabled',true);
+        
+        
+        
 
 
         // set list 
@@ -29,6 +44,7 @@ for(const seat of seatButton){
         const p = document.createElement('p');
         const p2 = document.createElement('p');
         const p3 = document.createElement('p');
+        
 
 
         p.innerText= seatNumber;
@@ -60,6 +76,10 @@ for(const seat of seatButton){
         let convertedGrandTotal = parseInt(grandTotal);
         convertedGrandTotal = sum;
 
+        //btn disable
+        
+        
+
 
         setInnerText('grand-total',convertedGrandTotal);
         setInnerText('seat-left',convertedSeatLeft);
@@ -69,24 +89,40 @@ for(const seat of seatButton){
 }
 
 
+
 const applyButton = document.getElementById('apply-btn').addEventListener('click',function(){
-    const couponField = document.getElementById('coupon-field').value;
+    let couponField = document.getElementById('coupon-field');
     const grandPrice = document.getElementById('grand-total').innerText;
     let convertedTotalPrice = parseInt(grandPrice);
-    if(couponField==="Akash"){ 
-        const newPrice = convertedTotalPrice - 100;
-        setInnerText('grand-total',newPrice);
+
+    const applyCouponSection = document.getElementById('apply-coupon-section');
+
+
+
+    if(couponField.value==="NEW15" && seatCount>0){ 
+        const discountPrice = convertedTotalPrice * .15;
         const discount = document.getElementById('discount');
         discount.classList.remove('hidden');
-        setInnerText('total-discount',100);
+        setInnerText('total-discount',discountPrice);
+        const newGrandTotal = grandPrice - discountPrice;
+        setInnerText('grand-total',newGrandTotal);
+        applyCouponSection.classList.add('hidden');
+        
     }
-    else if(couponField === "Bijoy"){
-        const newPrice = convertedTotalPrice - 200;
-        setInnerText('grand-total',newPrice);
-        setInnerText('total-discount',100);
+    else if(couponField.value==="Coupon 20" && seatCount>0){ 
+        const discountPrice = convertedTotalPrice * .20;
+        const discount = document.getElementById('discount');
+        discount.classList.remove('hidden');
+        setInnerText('total-discount',discountPrice);
+        const newGrandTotal = grandPrice - discountPrice;
+        setInnerText('grand-total',newGrandTotal);
+        applyCouponSection.classList.add('hidden');
     }
+    
     else{
+        couponField.value = '';
         alert("Wrong Coupon Code");
+        
     }
 });
 
@@ -97,6 +133,26 @@ const applyButton = document.getElementById('apply-btn').addEventListener('click
 // for modal 
 
 const successButton = document.getElementById('next-btn').addEventListener('click',function(){
+    const phoneField = document.getElementById('phone-field').value;
+    const convertedPhoneField = parseInt(phoneField);
+
+    console.log(typeof convertedPhoneField);
+    console.log(convertedPhoneField);
+
+    const modal = document.getElementById('my_modal_1');
+    
+    if(isNaN(convertedPhoneField)){
+        alert("Number Not added ! Please add your number ");      
+    }
+    else if(convertedPhoneField<1){
+        alert("Please added Correct Phone Number!")
+    }
+    else if(seatCount<1){
+        alert("Please Select At least 1 Seat!")
+    }
+    else{
+        modal.showModal();
+    }
 
 })
 
