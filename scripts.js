@@ -97,8 +97,6 @@ const applyButton = document.getElementById('apply-btn').addEventListener('click
 
     const applyCouponSection = document.getElementById('apply-coupon-section');
 
-
-
     if(couponField.value==="NEW15" && seatCount>0){ 
         const discountPrice = convertedTotalPrice * .15;
         const discount = document.getElementById('discount');
@@ -119,10 +117,8 @@ const applyButton = document.getElementById('apply-btn').addEventListener('click
         applyCouponSection.classList.add('hidden');
     }
     
-    else{
-        couponField.value = '';
+    else{       
         alert("Wrong Coupon Code");
-        
     }
 });
 
@@ -133,11 +129,8 @@ const applyButton = document.getElementById('apply-btn').addEventListener('click
 // for modal 
 
 const successButton = document.getElementById('next-btn').addEventListener('click',function(){
-    const phoneField = document.getElementById('phone-field').value;
-    const convertedPhoneField = parseInt(phoneField);
-
-    console.log(typeof convertedPhoneField);
-    console.log(convertedPhoneField);
+    const phoneField = document.getElementById('phone-field');
+    const convertedPhoneField = parseInt(phoneField.value);
 
     const modal = document.getElementById('my_modal_1');
     
@@ -154,14 +147,17 @@ const successButton = document.getElementById('next-btn').addEventListener('clic
         modal.showModal();
     }
 
+    
 })
 
+const closeButton = document.getElementById('close').addEventListener('click',function(){
+    const close = document.getElementById('close');
+    clickClose();
+})
 
-
-
-
-
-
+function clickClose(){
+    location.reload();
+}
 
 
 
