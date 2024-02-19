@@ -2,6 +2,9 @@ const seatButton = document.getElementsByClassName('seat-btn');
 let seatCount = 0;
 let sum = 0;
 
+const applyBtn = document.getElementById('apply-btn');
+applyBtn.disabled = true;
+applyBtn.style.backgroundColor = 'gray';
 
 
 for(const seat of seatButton){
@@ -79,8 +82,10 @@ for(const seat of seatButton){
         //btn disable
         
         
-
-
+        if(seatCount===4) {
+            applyBtn.disabled = false;
+            applyBtn.style.backgroundColor = '#1DD100';
+        }
         setInnerText('grand-total',convertedGrandTotal);
         setInnerText('seat-left',convertedSeatLeft);
         setInnerText('total-price',sum);
@@ -107,7 +112,7 @@ const applyButton = document.getElementById('apply-btn').addEventListener('click
         applyCouponSection.classList.add('hidden');
         
     }
-    else if(couponField.value==="Coupon 20" && seatCount>0){ 
+    else if(couponField.value==="Couple 20" && seatCount>0){ 
         const discountPrice = convertedTotalPrice * .20;
         const discount = document.getElementById('discount');
         discount.classList.remove('hidden');
@@ -130,24 +135,33 @@ const applyButton = document.getElementById('apply-btn').addEventListener('click
 
 const successButton = document.getElementById('next-btn').addEventListener('click',function(){
     const phoneField = document.getElementById('phone-field');
+    const inputValue = phoneField.value;
+
+    const mixedPattern = /^(?=.*\d)(?=.*[a-zA-Z])/;
+
+    if(mixedPattern.test(inputValue)){
+        alert("Wrong Phone Number!");
+        return;
+    }
+
+
     const convertedPhoneField = parseInt(phoneField.value);
+    console.log(convertedPhoneField);
 
     const modal = document.getElementById('my_modal_1');
     
     if(isNaN(convertedPhoneField)){
-        alert("Number Not added ! Please add your number ");      
+        alert("Please Add Your Number!");      
     }
     else if(convertedPhoneField<1){
-        alert("Please added Correct Phone Number!")
+        alert("Wrong Phone Number!")
     }
     else if(seatCount<1){
-        alert("Please Select At least 1 Seat!")
+        alert("Please Select At least 1 Seat!");
     }
     else{
         modal.showModal();
-    }
-
-    
+    }  
 })
 
 const closeButton = document.getElementById('close').addEventListener('click',function(){
