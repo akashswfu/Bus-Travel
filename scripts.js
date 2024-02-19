@@ -11,7 +11,7 @@ for(const seat of seatButton){
     seat.addEventListener('click',function(){
         
         if(seatCount>3){
-            alert('One person only can buy 4 seats');
+            alert('One person only can buy 4 seats!');
             return;
         }
         
@@ -121,7 +121,7 @@ const applyButton = document.getElementById('apply-btn').addEventListener('click
     }
     
     else{       
-        alert("Wrong Coupon Code");
+        alert("Wrong Coupon Code!");
     }
 });
 
@@ -170,8 +170,6 @@ const closeButton = document.getElementById('close').addEventListener('click',fu
 function clickClose(){
     location.reload();
 }
-
-
 
 function setInnerText(id,value){
     document.getElementById(id).innerText = value;
