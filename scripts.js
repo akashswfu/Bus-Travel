@@ -18,9 +18,7 @@ for(const seat of seatButton){
         seatCount++;
 
         seat.disabled = true;
-        
-        
-        
+ 
         seat.style.backgroundColor = '#1DD100';
         seat.style.color = 'white';
 
